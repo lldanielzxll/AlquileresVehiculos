@@ -35,7 +35,8 @@
 	<div class="col-md-1" >
 		 
 	<form action="" method="post"  class="form-inline" >
-		<div class="align-self-center">
+		<div class="align-self-center"  >
+
 		<label>Nombres:</label>
 		<input  class="form-control" type="text"   name="Usuarios[Nombre]" maxlength="45" value="" required=""/><br><br>		
 		

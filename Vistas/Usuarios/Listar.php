@@ -5,11 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>listar</title>
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
-</head>
-<body>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	
 
+</head>
+<body background="iconos/ferrari.png">
+		
 		<nav  class="navbar navbar-expand-lg navbar-dark bg-primary">
-			  <div class="collapse navbar-collapse" >
+			  <div class="collapse navbar-collapse" class="align-self-center mr-3" >
 			    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 			    	<li class="nav-item ">
 			        <a class="nav-link" href="index.php?c=Alquileres&a=admin">LISTADO DE ALQUILERES</a>
@@ -27,7 +30,9 @@
 			    </ul>
 			    <form class="form-inline my-2 my-lg-0" action="index.php?c=Usuarios&a=view" method="post">
 			      <input class="form-control mr-sm-2" type="text" name="nhab"  aria-label="Search" placeholder="Documento">
-			      <button class="btn btn-outline-dark" type="submit">Consultar</button>
+			      <button class="btn btn-primary" type="submit">
+			      	<img src="/ProyectoAutos/AlquileresVehiculos/AlquileresVehiculos/iconos/buscar.png" alt="bus"">
+			      </button>
 			    </form>
 			  </div>
 			</nav>
@@ -60,14 +65,23 @@
 				<td><?= $Usuarios->Contrasena; ?></td>
 				<td><?= $Usuarios->FechaNacimiento; ?></td>
 				<td> 
-                    <a href="index.php?c=Usuarios&a=update&Id=<?=$Usuarios->IdUsuarios ?>">Editar</a> 
-                    <a href="index.php?c=Usuarios&a=delete&Id=<?=$Usuarios->IdUsuarios ?>">Eliminar</a>
+                    <a href="index.php?c=Usuarios&a=update&Id=<?=$Usuarios->IdUsuarios ?>">
+                    	<img src="/ProyectoAutos/AlquileresVehiculos/AlquileresVehiculos/iconos/editar.png" alt="edi"">
+                    </a> 
+                    <a href="index.php?c=Usuarios&a=delete&Id=<?=$Usuarios->IdUsuarios ?>">
+						<img src="/ProyectoAutos/AlquileresVehiculos/AlquileresVehiculos/iconos/eliminar.png" alt="eli"">
+                    </a>
 
                 </td>
 			</tr>
 			<?php } ?>
 		</tbody>
 	</table><br><br>          
- <button><a href="index.php?c=Usuarios&a=create">Crear</a></button>
+ <a href="index.php?c=Usuarios&a=create" class="btn btn-outline-dark" role="button" aria-pressed="true" >
+ 	<img src="/ProyectoAutos/AlquileresVehiculos/AlquileresVehiculos/iconos/crear.png" alt="cre"">
+ </a>
+
+		
+
 </body>
 </html>
