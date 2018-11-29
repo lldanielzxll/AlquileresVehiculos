@@ -1,5 +1,5 @@
 <?php 
-require_once("Modelos/usuarios.php");
+require_once("Modelos/Usuarios.php");
 	class homecontroller{
 
 		public static function main($action){
