@@ -11,7 +11,7 @@
 </head>
 <body background="iconos/ferrari.png">
 		
-		<nav  class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<nav   class="navbar navbar-expand-lg navbar-dark" style="background-color:#000000;">
 			  <div class="collapse navbar-collapse" class="align-self-center mr-3" >
 			    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 			    	<li class="nav-item ">
@@ -30,21 +30,21 @@
 			    </ul>
 			    <form class="form-inline my-2 my-lg-0" action="index.php?c=Usuarios&a=view" method="post">
 			      <input class="form-control mr-sm-2" type="text" name="nhab"  aria-label="Search" placeholder="Documento">
-			      <button class="btn btn-primary" type="submit">
-			      	<img src="/ProyectoAutos/AlquileresVehiculos/AlquileresVehiculos/iconos/buscar.png" alt="bus"">
+			      <button class="btn btn-outline-dark" type="submit">
+			      	<img src="iconos/buscar.png" alt="bus"">
 			      </button>
 			    </form>
 			  </div>
 			</nav>
 
 	<blockquote class="blockquote text-center">
-		<label > Listado De Usuarios</label> 
+		<h1 class="display-5">LISTADO DE USUARIOS</h1>
 	</blockquote>
 	
 </form> 
 	<table  class="table table-bordered table-dark">            
 		<tbody>
-			<tr>
+			<tr  class="bg-info" >
 				
 				<th>Id</th>
 				<th>Nombres</th>
@@ -56,7 +56,7 @@
 				<th>Acciones</th>
 			</tr>
 			<?php foreach($Usuarios as $Usuarios){ ?>
-			<tr>
+			<tr  class="bg-danger">
 				<td><?= $Usuarios->IdUsuarios; ?></td>
 				<td><?= $Usuarios->Nombre; ?></td>
 				<td><?= $Usuarios->Apellidos; ?></td>
@@ -66,10 +66,10 @@
 				<td><?= $Usuarios->FechaNacimiento; ?></td>
 				<td> 
                     <a href="index.php?c=Usuarios&a=update&Id=<?=$Usuarios->IdUsuarios ?>">
-                    	<img src="/ProyectoAutos/AlquileresVehiculos/AlquileresVehiculos/iconos/editar.png" alt="edi"">
+                    	<img src="iconos/editar.png" alt="edi"">
                     </a> 
                     <a href="index.php?c=Usuarios&a=delete&Id=<?=$Usuarios->IdUsuarios ?>">
-						<img src="/ProyectoAutos/AlquileresVehiculos/AlquileresVehiculos/iconos/eliminar.png" alt="eli"">
+						<img src="iconos/eliminar.png" alt="eli"">
                     </a>
 
                 </td>
@@ -78,7 +78,7 @@
 		</tbody>
 	</table><br><br>          
  <a href="index.php?c=Usuarios&a=create" class="btn btn-outline-dark" role="button" aria-pressed="true" >
- 	<img src="/ProyectoAutos/AlquileresVehiculos/AlquileresVehiculos/iconos/crear.png" alt="cre"">
+ 	<img src="iconos/crear.png" alt="cre"">
  </a>
 
 		
