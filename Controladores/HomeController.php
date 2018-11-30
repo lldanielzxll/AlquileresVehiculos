@@ -1,5 +1,5 @@
 <?php 
-require_once("Modelos/Usuarios.php");
+require_once("Modelos/usuarios.php");
 	class homecontroller{
 
 		public static function main($action){
@@ -28,26 +28,38 @@ require_once("Modelos/Usuarios.php");
 			require "Vistas/home/home.php";
 		}
 		private function login(){
+			if (isset($_POST["Login"]) && $_POST["Login"]["documento"] != "" && $_POST["Login"]["contrasena"] != "") {
+                // Iniciar Sesion
+                $documento = $_POST["Login"]["documento"];
+                $contrasena = $_POST["Login"]["contrasena"];
 
-			if (isset($_POST["login"])) {
-				$documento = $_POST["login"]["Documento"];
-				$contrasena = $_POST["login"]["pas"];
-				$usuario = new Usuarios();
-				$usuario->findByDocument($documento);
-				if ($usuario->contrasena == $contrasena) {
-					$_SESSION["u"]= $usuario;
-					$_SESSION["Perfil"]="Administrador";
+                $usuario = new Usuarios();
+                $usuario->findByDocument($documento);
+                if (password_verify($contrasena,$usuario->contrasena) && $usuario->perfil == "Administrador") {
+                    $_SESSION["Usuario"] = $usuario;
+                    $_SESSION["Perfil"] = "Administrador";
 
-					header("location:index.php?c=vehiculos&a=admin");
-				}else{
-					header("location:index.php?$c=home&a=login&error=true");
-				}
-			}
-			require "Vistas/home/login.php";
+                    echo "soy Administrador";
+                    header("location: index.php?c=home&a=homeAdmin");
+                }else if(password_verify($contrasena,$usuario->contrasena) && $usuario->perfil == "Usuario"){
+                    $_SESSION["Usuario"] = $usuario;
+                    $_SESSION["Perfil"] = "Usuario";
+
+                    echo "Soy Usuario";
+                    header("location: index.php?c=home&a=homeUsuario");
+
+                }else{
+                    header("Location: index.php?c=home&a=login&error=true");
+                }
+            }else{
+                session_destroy();
+                require "login.php";
+            }
 		}
+
 		private function logout(){
 			session_destroy();
-			header("location:index.php?$c=home&a=login");
+			header("location: index.php?c=home&a=login");
 		}
 	}
 

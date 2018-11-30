@@ -22,10 +22,10 @@
 			        <a class="nav-link" href="index.php?c=Usuarios&a=admin">LISTADO DE USUARIOS </a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="index.php?c=Alquileres&a=create">LISTADO DE CLIENTES</a>
+			        <a class="nav-link" href="index.php?c=Clientes&a=admin">LISTADO DE CLIENTES</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link " href="index.php?c=Usuarios&a=create">LISTADO DE VEHICULOS</a>
+			        <a class="nav-link " href="index.php?c=Vehiculos&a=admin">LISTADO DE VEHICULOS</a>
 			      </li>
 			    </ul>
 			    <form class="form-inline my-2 my-lg-0" action="index.php?c=Usuarios&a=view" method="post">
