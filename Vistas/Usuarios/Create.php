@@ -60,7 +60,7 @@
 		<select name="Usuarios[Perfil]" value="" required="" class="custom-select">
 			<option value="">Seleccione un Perfil</option>
 			<option value="Usuario">Usuario</option>
-			<option value="Vendedor">Vendedor</option>
+			<option value="Administrador">Administrador</option>
 		</select><br><br>	
 
 		<label>Documento:</label>

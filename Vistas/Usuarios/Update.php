@@ -25,7 +25,7 @@
 		<select name="Usuarios[Perfil]" value="" required="" class="custom-select">
 			<option value="">Selecciona un Servicio</option>
 			<option value="<?= $Usuarios->Perfil ?>">Usuario </option>
-            <option value="<?= $Usuarios->Perfil ?>">Vendedor </option>
+            <option value="<?= $Usuarios->Perfil ?>">Administrador </option>
 		</select><br>
 
 		<label>Documento:</label>
