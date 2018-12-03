@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>home</title>
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/zx.css"></head>
+	<link rel="stylesheet" type="text/css" href="css/zx.css">
+</head>
 <body  background="iconos/home.png">
 	<nav   class="navbar navbar-expand-lg navbar-dark" style="background-color:#000000;">
 			  <div class="collapse navbar-collapse" class="align-self-center mr-3" >
@@ -31,5 +32,15 @@
 			    </form>
 			  </div>
 			</nav>
+
+
+		<footer style="width=100%; bottom: 0; position: fixed"><p class="colorp">Tesalqui©2018 - Privacidad y legal - Contacto - Bolsa de Trabajo - Obtén el boletín - Ubicaciones - Siguenos <img src="iconos/face.png" alt="fa">
+			<img src="iconos/twi.png" alt="tw">
+			<img src="iconos/insta.png" alt="tw">
+			<img src="iconos/google.png" alt="go">
+			<img src="iconos/youtube.png" alt="yo"></p>
+			
+		</footer>
 </body>
+
 </html>
