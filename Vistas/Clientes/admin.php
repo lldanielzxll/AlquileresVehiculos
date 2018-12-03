@@ -1,20 +1,50 @@
 <html>
 <head>
-<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>LISTADO GENERAL DE CLIENTES</title>
+	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
 </head>
-<body>
-	 <a href="index.php?c=Clientes&a=Create">Agregar</a>
+<body background="iconos/ferrari.png">
 
-    <label>Buscar Clientes</label> 
-<form action="index.php?c=Clientes&a=view" method="post"> 
-<input required type="text" name="nhab" placeholder="ingresar nombre"> 
-<button  type="submit">consultar</button> 
-</form> 
-<table  border="2" >
+	<nav   class="navbar navbar-expand-lg navbar-dark" style="background-color:#000000;">
+			  <div class="collapse navbar-collapse" class="align-self-center mr-3" >
+			    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			    	<li class="nav-item ">
+			        <a class="nav-link" href="index.php?c=Home">HOME</a>
+			      </li>
+			    	<li class="nav-item ">
+			        <a class="nav-link" href="index.php?c=Alquileres&a=admin">LISTADO DE ALQUILERES</a>
+			      </li>
+
+			      <li class="nav-item ">
+			        <a class="nav-link" href="index.php?c=Usuarios&a=admin">LISTADO DE USUARIOS </a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="index.php?c=Clientes&a=admin">LISTADO DE CLIENTES</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link " href="index.php?c=Vehiculos&a=admin">LISTADO DE VEHICULOS</a>
+			      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0" action="index.php?c=Clientes&a=view" method="post">
+			      <input class="form-control mr-sm-2" type="text" name="nhab"  aria-label="Search" placeholder="Nombre">
+			      <button class="btn btn-outline-dark" type="submit">
+			      	<img src="iconos/buscar.png" alt="bus"">
+			      </button>
+			    </form>
+			  </div>
+			</nav>
+	 
+
+   <blockquote class="blockquote text-center">
+	<h1  class="display-5"> Listado De Clientes</h1> 
+	</blockquote>
+
+<table  class="table table-bordered table-dark">
 	<tbody>
-		<tr>
-			<th scope="col">id</th>
+		<tr class="bg-info">
+			<th scope="col">Id</th>
 			<th scope="col">Nombre</th>
 			<th scope="col">Apellido</th>
 			<th scope="col">Documento</th>
@@ -22,9 +52,10 @@
 			<th scope="col">Celular</th>
 			<th scope="col">Ciudad</th>
 			<th scope="col">NumLicencia</th>
+			<th scope="col">Acciones</th>
 		</tr>
 		<?php foreach($Clientes as $cli) {?>
-		<tr>
+		<tr class="bg-danger">
 			<th scope="row"><?= $cli->IdClientes; ?></th>
 			<th ><?= $cli->Nombre; ?></th>
 			<th ><?= $cli->Apellido; ?></th>
@@ -33,13 +64,21 @@
 			<th ><?= $cli->Celular; ?></th>
 			<th ><?= $cli->Ciudad; ?></th>
 			<th ><?= $cli->NumLicencia; ?></th>
-			<th ><a href="index.php?c=Clientes&a=update&id=<?= $cli->IdClientes; ?>">Editar</th>
-			<th ><a href="index.php?c=Clientes&a=delete&id=<?= $cli->IdClientes; ?>">Eliminar</th>
+			<td ><a href="index.php?c=Clientes&a=update&id=<?= $cli->IdClientes; ?>">
+				<img src="iconos/editar.png" alt="edi"">
+			</a>
+			<a href="index.php?c=Clientes&a=delete&id=<?= $cli->IdClientes; ?>">
+				<img src="iconos/eliminar.png" alt="eli"">
+			</a>
 		</tr>
 		<?php } ?>
 	</tbody>
 
 </table>
+			<a href="index.php?c=Clientes&a=create" class="btn btn-outline-dark" role="button" aria-pressed="true">
+				<img src="iconos/crear.png" alt="cre"">
+			</a>
+
 </body>
 </html>
 

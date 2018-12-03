@@ -1,12 +1,15 @@
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>consultar</title>
+  <link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
 </head>
-<body>
+<body background="iconos/ferrari.png">
   <br><br>
-<a href="index.php?c=Vehiculos&a=admin">volver</a>
+          <center><a href="index.php?c=Vehiculos&a=admin" class="btn btn-outline-danger">volver</a></center>
 <br><br><br><br><br><br><br><br><br><br> 
-<table width="200" border="1" cellspacing="2" cellpadding="2" align="center"> 
+<table width="200" border="1" cellspacing="2" cellpadding="2" align="center" class="table table-bordered table-dark"> 
 	<tbody>
 		<tr>
 	  <th scope="col">id</th> 

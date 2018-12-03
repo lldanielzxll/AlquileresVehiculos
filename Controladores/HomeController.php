@@ -1,5 +1,5 @@
 <?php 
-require_once("Modelos/usuarios.php");
+require_once("Modelos/Usuarios.php");
 	class homecontroller{
 
 		public static function main($action){
@@ -25,7 +25,7 @@ require_once("Modelos/usuarios.php");
 			}
 		}
 		private function home(){
-			require "Vistas/home/home.php";
+			require "Vistas/Home/Home.php";
 		}
 		private function login(){
 			if (isset($_POST["Login"]) && $_POST["Login"]["documento"] != "" && $_POST["Login"]["contrasena"] != "") {

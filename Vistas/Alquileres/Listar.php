@@ -6,11 +6,14 @@
 	<title>listar</title>
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
 </head>
-<body>
+<body background="iconos/ferrari.png">
 
-			<nav  class="navbar navbar-expand-lg navbar-dark bg-primary">
-			  <div class="collapse navbar-collapse" >
+			<nav   class="navbar navbar-expand-lg navbar-dark" style="background-color:#000000;">
+			  <div class="collapse navbar-collapse" class="align-self-center mr-3" >
 			    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			    	<li class="nav-item ">
+			        <a class="nav-link" href="index.php?c=Home">HOME</a>
+			      </li>
 			    	<li class="nav-item ">
 			        <a class="nav-link" href="index.php?c=Alquileres&a=admin">LISTADO DE ALQUILERES</a>
 			      </li>
@@ -19,29 +22,31 @@
 			        <a class="nav-link" href="index.php?c=Usuarios&a=admin">LISTADO DE USUARIOS </a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="index.php?c=Alquileres&a=create">LISTADO DE CLIENTES</a>
+			        <a class="nav-link" href="index.php?c=Clientes&a=admin">LISTADO DE CLIENTES</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link " href="index.php?c=Usuarios&a=create">LISTADO DE VEHICULOS</a>
+			        <a class="nav-link " href="index.php?c=Vehiculos&a=admin">LISTADO DE VEHICULOS</a>
 			      </li>
 			    </ul>
 			    <form class="form-inline my-2 my-lg-0" action="index.php?c=Alquileres&a=view" method="post">
 			      <input class="form-control mr-sm-2" type="text" name="nhab"  aria-label="Search" placeholder="Ciudad">
-			      <button class="btn btn-outline-dark" type="submit">Consultar</button>
+			      <button class="btn btn-outline-dark" type="submit">
+			      	<img src="iconos/buscar.png" alt="bus"">
+			      </button>
 			    </form>
 			  </div>
 			</nav>
 
 	<blockquote class="blockquote text-center">
-	<label> Listado De Alquileres</label> 
+	<h1 class="display-5"> Listado De Alquileres  </h1>
 	</blockquote>
 
 
-</form> 
+
 
 	<table class="table table-bordered table-dark">            
 		<tbody>
-			<tr>
+			<tr class="bg-info">
 				
 				<th>Id</th>
 				<th>Ciudad</th>
@@ -58,7 +63,7 @@
 				<th>Acciones</th>
 			</tr>
 			<?php foreach($Alquileres as $Alquileres){ ?>
-			<tr>
+			<tr  class="bg-danger">
 				<td><?= $Alquileres->IdAlquileres; ?></td>
 				<td><?= $Alquileres->Ciudad; ?></td>
 				<td><?= $Alquileres->ValorDia; ?></td>
@@ -72,14 +77,20 @@
 				<td><?= $Alquileres->Vehiculos_IdVehiculos; ?></td>
 				<td><?= $Alquileres->Usuarios_IdUsuarios; ?></td>
 				<td> 
-                    <a href="index.php?c=Alquileres&a=update&Id=<?=$Alquileres->IdAlquileres ?>">Editar</a> 
-                    <a href="index.php?c=Alquileres&a=delete&Id=<?=$Alquileres->IdAlquileres ?>">Eliminar</a>
+                    <a href="index.php?c=Alquileres&a=update&Id=<?=$Alquileres->IdAlquileres ?>">
+                    	<img src="iconos/editar.png" alt="edi"">
+                    </a> 
+                    <a href="index.php?c=Alquileres&a=delete&Id=<?=$Alquileres->IdAlquileres ?>">
+                    	<img src="iconos/eliminar.png" alt="eli"">
+                    </a>
 
                 </td>
 			</tr>
 			<?php } ?>
 		</tbody>
 	</table><br><br>
-	<button><a href="index.php?c=Alquileres&a=create">Crear</a></button>
+	<a href="index.php?c=Alquileres&a=create" class="btn btn-outline-dark" role="button" aria-pressed="true">
+		<img src="iconos/crear.png" alt="cre"">
+	</a>
 </body>
 </html>

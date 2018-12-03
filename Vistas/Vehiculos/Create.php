@@ -1,30 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>REGISTRO VEHICULOS</title>
+	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/zx.css">
 </head>
-<body>
-	<H1>Registrar Vehiculos</H1>
-<form action="" method="POST">
-	<label>Placa</label>
-	<input required="" type="text" name="Vehiculos[Placa]"values=""/>
+<body background="iconos/ferrari.png">
 
+	<nav   class="navbar navbar-expand-lg navbar-dark" style="background-color:#000000;">
+			  <div class="collapse navbar-collapse" class="align-self-center mr-3" >
+			    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			    	<li class="nav-item ">
+			        <a class="nav-link" href="index.php?c=Home">HOME</a>
+			      </li>
+			    	<li class="nav-item ">
+			        <a class="nav-link" href="index.php?c=Alquileres&a=admin">LISTADO DE ALQUILERES</a>
+			      </li>
+
+			      <li class="nav-item ">
+			        <a class="nav-link" href="index.php?c=Usuarios&a=admin">LISTADO DE USUARIOS </a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="index.php?c=Clientes&a=admin">LISTADO DE CLIENTES</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link " href="index.php?c=Vehiculos&a=admin">LISTADO DE VEHICULOS</a>
+			      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0" action="index.php?c=Vehiculos&a=view" method="post">
+			      <input class="form-control mr-sm-2" type="text" name="nhab"  aria-label="Search" placeholder="Placa">
+			      <button class="btn btn-outline-dark" type="submit">
+			      	<img src="iconos/buscar.png" alt="bus"">
+			      </button>
+			    </form>
+			  </div>
+			</nav>
+
+	<blockquote class="blockquote text-center">
+		<h1 class="display-5">Registrar Vehiculos</h1>
+	</blockquote>
+
+	<div id="centro" >
+
+<center><form action="" method="POST" >
+	
+
+	<label>Placa</label>
+	<input  class="form-control"   required="" type="text" name="Vehiculos[Placa]"values=""/>
+	
 	<label>Marca</label>
-	<input required="" type="text" name="Vehiculos[Marca]"values=""/>
+	<input  class="form-control" required="" type="text" name="Vehiculos[Marca]"values=""/>
 
 	<label>Capacidad Asientos</label>
-	<input required="" type="text" name="Vehiculos[CapacidadAsientos]"values="">
+	<input  class="form-control" required="" type="number" name="Vehiculos[CapacidadAsientos]"values="">
 
 	<label>FvSeguro</label>
-	<input required="" type="datetime-local" name="Vehiculos[FvSeguro]"values=""/>
+	<input class="custom-select" required="" type="datetime-local" name="Vehiculos[FvSeguro]"values=""/>
 
 	<label>FvTecnomecanica</label>
-	<input required="" type="datetime-local" name="Vehiculos[FvTecnomecanica]"values=""/>
+	<input class="custom-select" required="" type="datetime-local" name="Vehiculos[FvTecnomecanica]"values=""/>
 
 	<label>Foto Vehiculos</label>
-	<input required="" type="text" name="Vehiculos[FotoVehiculos]"values=""/>
+	<input class="form-control" required="" type="text" name="Vehiculos[FotoVehiculos]"values=""/><br><br>
+	</div>
+	<div id="boton" >
+	<button class="btn btn-info" type="submit"> CREAR VEHICULO </button>
+</div>
+</form></center>
 
-	<button type="submit"> CREAR VEHICULO </button>
-</form>
 </body>
 </html>

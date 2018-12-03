@@ -1,12 +1,18 @@
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>consultar</title>
+   <link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
-<body>
+<body background="iconos/ferrari.png">
   <br><br>
-<a href="index.php?c=Clientes&a=admin">volver</a>
+          
+             <center> <a href="index.php?c=Clientes&a=admin"  class="btn btn-outline-danger">volver</a></center>
+          
 <br><br><br><br><br><br><br><br><br><br> 
-<table width="200" border="1" cellspacing="2" cellpadding="2" align="center"> 
+<table width="200" border="1" cellspacing="2" cellpadding="2" align="center" class="table table-bordered table-dark"> 
 	<tbody>
 		<tr>
 	  <th scope="col">id</th> 
@@ -18,7 +24,7 @@
       <th scope="col">Ciudad</th> 
       <th scope="col">NumLicencia</th> 
 
-      <th scope="col" colspan="2">Acciones</th> 
+      
     </tr> 
     	<?php foreach($Clientes as $Clientes){?> 
     <tr> 
@@ -28,9 +34,9 @@
       <td><?= $Clientes->Documento; ?></td> 
       <td><?= $Clientes->Direccion; ?></td> 
       <td><?= $Clientes->Celular; ?></td> 
+      <td><?= $Clientes->Ciudad; ?></td> 
       <td><?= $Clientes->NumLicencia; ?></td> 
-      <td><a href="index.php?c=Clientes&a=Update&id=<?= $Clientes->IdClientes; ?>">Editar</a></td> 
-      <td><a href="index.php?c=Clientes&a=delete&id=<?= $Clientes->IdClientes; ?>">Eliminar</a></td> 
+      
     </tr> 
     <?php } ?> 
   </tbody>

@@ -15,6 +15,9 @@
 			  <div class="collapse navbar-collapse" class="align-self-center mr-3" >
 			    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 			    	<li class="nav-item ">
+			        <a class="nav-link" href="index.php?c=Home">HOME</a>
+			      </li>
+			    	<li class="nav-item ">
 			        <a class="nav-link" href="index.php?c=Alquileres&a=admin">LISTADO DE ALQUILERES</a>
 			      </li>
 

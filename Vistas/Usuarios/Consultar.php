@@ -6,8 +6,9 @@
 	<title>consultar</title>
   <link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
 </head>
-<body>
-	<a href="index.php?c=Usuarios&a=admin">volver</a> 
+<body background="iconos/ferrari.png">
+   <br><br>
+	<center><a href="index.php?c=Usuarios&a=admin" class="btn btn-outline-danger">volver</a></center>
 <br><br><br><br><br><br><br><br><br><br> 
 <table width="200" border="1" cellspacing="2" cellpadding="2" align="center" class="table table-bordered table-dark"> 
   <tbody> 

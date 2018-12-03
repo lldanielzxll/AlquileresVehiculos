@@ -1,0 +1,13 @@
+#centro{
+	margin: 0px auto;
+	width: 400px;
+}
+
+#boton{
+	margin: 0px auto;
+	width: 150px;
+}
+
+.confondo{
+	background-color: red;
+}
