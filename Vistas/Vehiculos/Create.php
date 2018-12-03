@@ -48,10 +48,10 @@
 	
 
 	<label>Placa</label>
-	<input  class="form-control"   required="" type="text" name="Vehiculos[Placa]"values=""/>
+	<input  class="form-control"   maxlength="6" required="" type="text" name="Vehiculos[Placa]"values=""/>
 	
 	<label>Marca</label>
-	<input  class="form-control" required="" type="text" name="Vehiculos[Marca]"values=""/>
+	<input  class="form-control"  maxlength="45" required="" type="text" name="Vehiculos[Marca]"values=""/>
 
 	<label>Capacidad Asientos</label>
 	<input  class="form-control" required="" type="number" name="Vehiculos[CapacidadAsientos]"values="">
@@ -63,11 +63,11 @@
 	<input class="custom-select" required="" type="datetime-local" name="Vehiculos[FvTecnomecanica]"values=""/>
 
 	<label>Foto Vehiculos</label>
-	<input class="form-control" required="" type="text" name="Vehiculos[FotoVehiculos]"values=""/><br><br>
+	<input class="form-control" required=""  maxlength="45" type="text" name="Vehiculos[FotoVehiculos]"values=""/><br><br>
 	</div>
 	<div id="boton" >
 	<button class="btn btn-info" type="submit"> CREAR VEHICULO </button>
-</div>
+	</div>
 </form></center>
 
 </body>

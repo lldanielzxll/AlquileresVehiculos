@@ -40,6 +40,7 @@
 	<h1  class="display-5"> Listado De Vehiculos</h1> 
 	</blockquote>
 
+
 <table class="table table-bordered table-dark" >
 	<tbody>
 		<tr class="bg-info">
@@ -78,6 +79,14 @@
 	<a href="index.php?c=Vehiculos&a=create" class="btn btn-outline-dark" role="button" aria-pressed="true">
 		<img src="iconos/crear.png" alt="cre"">
 	</a>
+
+<a href="Vistas/Vehiculos/files.php" class="btn btn-outline-dark" role="button" aria-pressed="true">
+		<img src="iconos/imagen.png" alt="cre"">
+	</a>
 </body>
 </html>
+
+
+
+
 

@@ -11,3 +11,8 @@
 .confondo{
 	background-color: red;
 }
+
+#botonvehiculo{
+	margin: 0px auto;
+	width: 400px;
+}

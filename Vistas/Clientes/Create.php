@@ -48,25 +48,25 @@
 	
 
 	<label>Nombre</label>
-	<input class="form-control" required="" type="text" name="Clientes[Nombre]"values=""/>
+	<input class="form-control"  maxlength="45" required="" type="text" name="Clientes[Nombre]"values=""/>
 
 	<label>Apellido</label>
-	<input class="form-control" required="" type="text" name="Clientes[Apellido]"values=""/>
+	<input class="form-control"  maxlength="45" required="" type="text" name="Clientes[Apellido]"values=""/>
 
 	<label>Documento</label>
-	<input class="form-control" required="" type="text" name="Clientes[Documento]"values="">
+	<input class="form-control"  maxlength="10" required="" type="text" name="Clientes[Documento]"values="">
 
 	<label>Direccion</label>
-	<input class="form-control" required="" type="text" name="Clientes[Direccion]"values=""/>
+	<input class="form-control"  maxlength="45" required="" type="text" name="Clientes[Direccion]"values=""/>
 
 	<label>Celular</label>
-	<input class="form-control" required="" type="text" name="Clientes[Celular]"values=""/>
+	<input class="form-control"  maxlength="10" required="" type="text" name="Clientes[Celular]"values=""/>
 
 	<label>Ciudad</label>
-	<input class="form-control" required="" type="text" name="Clientes[Ciudad]"values=""/>
+	<input class="form-control"  maxlength="45" required="" type="text" name="Clientes[Ciudad]"values=""/>
 
 	<label >Numero Licencia</label>
-	<input class="form-control" required="" type="number" name="Clientes[NumLicencia]"values=""/><br><br>
+	<input class="form-control"  maxlength="45" required="" type="number" name="Clientes[NumLicencia]"values=""/><br><br>
 	</div>
 	<div id="boton" >
 	<button type="submit" class="btn btn-info"> CREAR CLIENTE </button>

@@ -20,6 +20,7 @@ class VehiculosController{
 			case "admin":
 			$_this->admin();
 			break;
+			
 
 			default:
 			throw new Exception("Accion no definida");

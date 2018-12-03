@@ -2,68 +2,78 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>update</title>
+	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/zx.css">
 </head>
-<body>
+<body background="iconos/ferrari.png">
 
-	<form action="" method="post">
+	<blockquote class="blockquote text-center">
+		<h1 class="display-5">Actualizar Alquileres</h1>
+	</blockquote>
+
+	<div id="centro" >
+
+	<center><form action="" method="post">
 		<label>Ciudad:</label>
-		<input   type="text"   name="Alquileres[Ciudad]" value="<?= $Alquileres->Ciudad ?>" maxlength="45" required=""/><br><br>		
+		<input   type="text" class="form-control"  name="Alquileres[Ciudad]" value="<?= $Alquileres->Ciudad ?>" maxlength="45" required=""/><br><br>		
 		
 		
 		<label>ValorDia:</label>
 		
-				<input type="number" name="Alquileres[ValorDia]" value="<?= $Alquileres->ValorDia ?>" required=""
+				<input type="number" class="form-control" name="Alquileres[ValorDia]" value="<?= $Alquileres->ValorDia ?>" required=""
 		/><br><br>
 		
 		<label>FechaRecogida:</label>
-		<input type="datetime-local" name="Alquileres[FechaRecogida]" value="<?= $Alquileres->FechaRecogida ?>" required=""/><br><br>
+		<input type="datetime-local" class="custom-select" name="Alquileres[FechaRecogida]" value="<?= $Alquileres->FechaRecogida ?>" required=""/><br><br>
 
 		<label>FechaEntrega:</label>
-		<input type="datetime-local" name="Alquileres[FechaEntrega]" value="<?= $Alquileres->FechaEntrega ?>" required=""/><br><br>
+		<input type="datetime-local" class="custom-select" name="Alquileres[FechaEntrega]" value="<?= $Alquileres->FechaEntrega ?>" required=""/><br><br>
 
 		<label>OficinaDeRetiro:</label>
-		<input   type="text"   name="Alquileres[OficinaDeRetiro]" maxlength="45" value="<?= $Alquileres->OficinaDeRetiro ?>" required=""/><br><br>	
+		<input   type="text" class="form-control" name="Alquileres[OficinaDeRetiro]" maxlength="45" value="<?= $Alquileres->OficinaDeRetiro ?>" required=""/><br><br>	
 
 		<label>OficinaDeDevolucion:</label>
-		<input   type="text"   name="Alquileres[OficinaDeDevolucion]" maxlength="45" value="<?= $Alquileres->OficinaDeDevolucion ?>" required=""/><br><br>			
+		<input   type="text" class="form-control"  name="Alquileres[OficinaDeDevolucion]" maxlength="45" value="<?= $Alquileres->OficinaDeDevolucion ?>" required=""/><br><br>			
 
 		<label>Estado:</label>
-		<select name="Alquileres[Estado]" value="" required="">
+		<select name="Alquileres[Estado]" value="" required="" class="custom-select">
 			<option value="">Seleccione un Estado</option>
 			<option value="<?= $Alquileres->Estado ?>">Activo</option>
 			<option value="<?= $Alquileres->Estado ?>">Inactivo</option>
 		</select><br><br>	
 
 		<label>FormaDePago:</label>
-		<select name="Alquileres[FormaDePago]" value="" required="">
+		<select name="Alquileres[FormaDePago]" value="" required="" class="custom-select">
 			<option value="">Seleccione una Forma De Pago</option>
 			<option value="<?= $Alquileres->FormaDePago ?>">TarjetaDeCredito</option>
 			<option value="<?= $Alquileres->FormaDePago ?>">Efectivo</option>
 		</select><br><br>			
 
 		<label>Clientes_IdClientes:</label>
-		<select name="Alquileres[Clientes_IdClientes]"  required="">
+		<select name="Alquileres[Clientes_IdClientes]"  required="" class="custom-select">
 			<option value="">--seleccionar--</option>	
 			<option value="<?= $Alquileres->Clientes_IdClientes ?>">1</option>		
 		</select><br><br>	
 
 		<label>Vehiculos_IdVehiculos:</label>
-		<select name="Alquileres[Vehiculos_IdVehiculos]"  required="">
+		<select name="Alquileres[Vehiculos_IdVehiculos]"  required="" class="custom-select">
 			<option value="">--seleccionar--</option>	
 			<option value="<?= $Alquileres->Vehiculos_IdVehiculos ?>">1</option>		
 		</select><br><br>	
 
 		<label>Usuarios_IdUsuarios:</label>
-		<select name="Alquileres[Usuarios_IdUsuarios]"  required="">
+		<select name="Alquileres[Usuarios_IdUsuarios]"  required="" class="custom-select">
 			<option value="">--seleccionar--</option>	
 			<option value="<?= $Alquileres->Usuarios_IdUsuarios ?>">1</option>		
 		</select><br><br>
 
 		<input type="hidden" name="Id" value="<?= $Alquileres->IdAlquileres ?>">
+		</div>
 
-		<button type="submit">Editar</button>
-	</form><br>
+		<center><button class="btn btn-info" type="submit">Editar</button></center>
+	</form></center><br>
 	
 </body>
 </html>
