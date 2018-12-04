@@ -23,13 +23,13 @@ class Usuarios extends Conexion{
 		$Conexion = $this->getConexion();
 		$stm = $Conexion->prepare("SELECT * FROM Usuarios");
 		$stm->setFetchMode(PDO::FETCH_CLASS,'Usuarios');
-		$Usuarios = array();
+		$usuario = array();
 		$stm->execute();
 
 		while ($obj = $stm->fetch()) {
-				$Usuarios[]=$obj;
+				$usuario[]=$obj;
 			}			
-			return $Usuarios;
+			return $usuario;
 	}
 
 	//crear
@@ -67,6 +67,15 @@ class Usuarios extends Conexion{
             $stm->fetch();
             }
 
+             public function findbydocument($do) {
+            $Conexion =$this->getConexion();
+			$stm = $Conexion->prepare("SELECT * FROM Usuarios  WHERE Documento= :do");
+			$stm->setFetchMode(PDO::FETCH_INTO, $this);
+            $stm->bindParam(":do",$do);
+			$stm->execute();
+            $stm->fetch();
+            }
+
             //Modificar
              public function update(){ 
 			$Conexion =$this->getConexion();
@@ -96,8 +105,9 @@ class Usuarios extends Conexion{
 				$Usuarios[]=$obj; 
 			} 
 			return $Usuarios; 
-                } 
-
+                
 }
+}
+
 
  ?>

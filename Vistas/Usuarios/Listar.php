@@ -58,20 +58,20 @@
 				<th>FechaNacimiento</th>
 				<th>Acciones</th>
 			</tr>
-			<?php foreach($Usuarios as $Usuarios){ ?>
+			<?php foreach($Usuarios as $Usuarios2){ ?>
 			<tr  class="bg-danger">
-				<td><?= $Usuarios->IdUsuarios; ?></td>
-				<td><?= $Usuarios->Nombre; ?></td>
-				<td><?= $Usuarios->Apellidos; ?></td>
-				<td><?= $Usuarios->Perfil; ?></td>
-				<td><?= $Usuarios->Documento; ?></td>
-				<td><?= $Usuarios->Contrasena; ?></td>
-				<td><?= $Usuarios->FechaNacimiento; ?></td>
+				<td><?= $Usuarios2->IdUsuarios; ?></td>
+				<td><?= $Usuarios2->Nombre; ?></td>
+				<td><?= $Usuarios2->Apellidos; ?></td>
+				<td><?= $Usuarios2->Perfil; ?></td>
+				<td><?= $Usuarios2->Documento; ?></td>
+				<td><?= $Usuarios2->Contrasena; ?></td>
+				<td><?= $Usuarios2->FechaNacimiento; ?></td>
 				<td> 
-                    <a href="index.php?c=Usuarios&a=update&Id=<?=$Usuarios->IdUsuarios ?>">
+                    <a href="index.php?c=Usuarios&a=update&Id=<?=$Usuarios2->IdUsuarios ?>">
                     	<img src="iconos/editar.png" alt="edi"">
                     </a> 
-                    <a href="index.php?c=Usuarios&a=delete&Id=<?=$Usuarios->IdUsuarios ?>">
+                    <a href="index.php?c=Usuarios&a=delete&Id=<?=$Usuarios2->IdUsuarios ?>">
 						<img src="iconos/eliminar.png" alt="eli"">
                     </a>
 

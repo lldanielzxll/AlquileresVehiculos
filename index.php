@@ -1,10 +1,10 @@
 <?php 
 	
-	
+	require("Modelos/Usuarios.php");	
 	session_start(); 
 
-	$action = "home";
-	$controller = "home";
+	$action = "Home";
+	$controller = "Home";
 
 	if (isset($_GET["a"])) 
 		$action = $_GET["a"];

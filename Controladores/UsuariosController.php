@@ -1,6 +1,6 @@
 <?php 
 
-require "Modelos/Usuarios.php";
+require_once "Modelos/Usuarios.php";
 class UsuariosController{
 	public static function main($action){
         $_this= new UsuariosController();
@@ -35,7 +35,7 @@ class UsuariosController{
 			//listar
 		private function admin(){
 			//consultar listado de la bd
-			$usu= new Usuarios();
+			$usu = new Usuarios();
 			$Usuarios = $usu->listar();
 
 			require "Vistas/Usuarios/Listar.php";
@@ -50,12 +50,14 @@ class UsuariosController{
 				$do = $_POST["Usuarios"]["Documento"];
 				$co = $_POST["Usuarios"]["Contrasena"];
 				$fe = $_POST["Usuarios"]["FechaNacimiento"];
-				
+
+				//$Usuarios->findBydocument($Documento);
 
 				$Usuarios = new Usuarios();
 				$guardar = $Usuarios->save($no,$ap,$pe,$do,$co,$fe);
 
 				if($guardar){
+					$_SESSION["Documento"]=$do;
 					header("location:index.php?c=Usuarios&a=admin");
 				}else{
 					echo "Ocurrio un error al guardar";

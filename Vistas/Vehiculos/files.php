@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/zx.css">
 </head>
-<body background="/ProyectoAutos/AlquileresVehiculos/AlquileresVehiculos/iconos/ferrari.png">
+<body background="/proyecto php/AlquileresVehiculos/iconos/ferrari.png">
 
     <center><blockquote class="blockquote text-center">
     <h1  class="display-5">Guardar Imagenes</h1> 
@@ -54,6 +54,6 @@
     
  </form></center>
 
- <center><a href="/ProyectoAutos/AlquileresVehiculos/AlquileresVehiculos/index.php?c=Vehiculos&a=admin" class="btn btn-outline-danger">volver</a></center>
+ <center><a href="/proyecto php/AlquileresVehiculos/index.php?c=Vehiculos&a=admin" class="btn btn-outline-danger">volver</a></center>
 </body>
 </html>
