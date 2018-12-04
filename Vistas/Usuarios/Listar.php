@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>listar</title>
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/zx.css">
 	
 
 </head>
@@ -84,7 +84,23 @@
  	<img src="iconos/crear.png" alt="cre"">
  </a>
 
-		
+		<footer style="width=100%; bottom: 0; position: fixed"><p class="colorp">Tesalqui©2018 - Privacidad y legal - Contacto - Bolsa de Trabajo - Obtén el boletín - Ubicaciones - Siguenos
+			<a href="" class="btn btn-outline-dark">
+		 	<img src="iconos/face.png" alt="fa">
+		 	</a>
+		 	<a href="" class="btn btn-outline-dark">
+			<img src="iconos/twi.png" alt="tw">
+			</a>
+			<a href="" class="btn btn-outline-dark">
+			<img src="iconos/insta.png" alt="tw">
+			</a> 
+			<a href="" class="btn btn-outline-dark">
+			<img src="iconos/google.png" alt="go">
+			</a>
+			<a href="" class="btn btn-outline-dark">
+			<img src="iconos/youtube.png" alt="yo">
+			</a></p>
+		</footer>		
 
 </body>
 </html>
