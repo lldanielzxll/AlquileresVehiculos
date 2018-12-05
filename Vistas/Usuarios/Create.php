@@ -47,29 +47,29 @@
 	<center><form action="" method="post"  >
 		
 
-		<label>Nombres:</label>
+		<label style="color:#F90000;">Nombres:</label>
 		<input  class="form-control" type="text"   name="Usuarios[Nombre]" maxlength="45" value="" required=""/><br><br>		
 		
 		
-		<label>Apellidos:</label>
+		<label style="color:#F90000;">Apellidos:</label>
 		
 				<input class="form-control" type="text" name="Usuarios[Apellidos]" maxlength="45" value="" required=""
 		/><br><br>
 		
-		<label>Perfil:</label>
+		<label style="color:#F90000;">Perfil:</label>
 		<select name="Usuarios[Perfil]" value="" required="" class="custom-select">
 			<option value="">Seleccione un Perfil</option>
 			<option value="Usuario">Usuario</option>
 			<option value="Administrador">Administrador</option>
 		</select><br><br>	
 
-		<label>Documento:</label>
+		<label style="color:#F90000;">Documento:</label>
 		<input class="form-control"  type="text"   name="Usuarios[Documento]" maxlength="10" value="" required=""/><br><br>			
 
-		<label>Contraseña:</label>
+		<label style="color:#F90000;">Contraseña:</label>
 		<input class="form-control"  type="password"   name="Usuarios[Contrasena]" value="" required=""/><br><br>		
 
-		<label>FechaNacimiento:</label>
+		<label style="color:#F90000;">FechaNacimiento:</label>
 		<input class="form-control" type="date" name="Usuarios[FechaNacimiento]" value="" required=""/><br><br>
 	</div>
 

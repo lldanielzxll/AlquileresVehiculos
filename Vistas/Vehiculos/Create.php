@@ -47,22 +47,22 @@
 <center><form action="" method="POST" >
 	
 
-	<label>Placa</label>
+	<label style="color:#F90000;">Placa</label>
 	<input  class="form-control"   maxlength="6" required="" type="text" name="Vehiculos[Placa]"values=""/>
 	
-	<label>Marca</label>
+	<label style="color:#F90000;">Marca</label>
 	<input  class="form-control"  maxlength="45" required="" type="text" name="Vehiculos[Marca]"values=""/>
 
-	<label>Capacidad Asientos</label>
+	<label style="color:#F90000;">Capacidad Asientos</label>
 	<input  class="form-control" required="" type="number" name="Vehiculos[CapacidadAsientos]"values="">
 
-	<label>FvSeguro</label>
+	<label style="color:#F90000;">FvSeguro</label>
 	<input class="custom-select" required="" type="datetime-local" name="Vehiculos[FvSeguro]"values=""/>
 
-	<label>FvTecnomecanica</label>
+	<label style="color:#F90000;">FvTecnomecanica</label>
 	<input class="custom-select" required="" type="datetime-local" name="Vehiculos[FvTecnomecanica]"values=""/>
 
-	<label>Foto Vehiculos</label>
+	<label style="color:#F90000;">Foto Vehiculos</label>
 	<input class="form-control" required=""  maxlength="45" type="text" name="Vehiculos[FotoVehiculos]"values=""/><br><br>
 	</div>
 	<div id="boton" >

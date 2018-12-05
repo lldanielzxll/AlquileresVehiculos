@@ -17,22 +17,22 @@
 
 	<center><form action="" method="POST">
 		
-	<label>Placa</label>
+	<label style="color:#F90000;">Placa</label>
 	<input type="text"  class="form-control" maxlength="6" name="Vehiculos[Placa]" value="<?= $Vehiculos->Placa ?>">
 
-	<label>Marca</label>
+	<label style="color:#F90000;">Marca</label>
 	<input type="text" class="form-control" maxlength="45" name="Vehiculos[Marca]" value="<?= $Vehiculos->Marca ?>">
 
-	<label>Capacidad Asientos</label>
+	<label style="color:#F90000;">Capacidad Asientos</label>
 	<input type="number" class="form-control" name="Vehiculos[CapacidadAsientos]" value="<?= $Vehiculos->CapacidadAsientos ?>">
 
-	<label>FvSeguro</label>
+	<label style="color:#F90000;">FvSeguro</label>
 	<input class="custom-select" type="datetime-local" name="Vehiculos[FvSeguro]" value="<?= $Vehiculos->FvSeguro ?>">
 
-	<label>FvTecnomecanica</label>
+	<label style="color:#F90000;">FvTecnomecanica</label>
 	<input class="custom-select" type="datetime-local" name="Vehiculos[FvTecnomecanica]" value="<?= $Vehiculos->FvTecnomecanica ?>">
 
-	<label>Foto Vehiculos</label>
+	<label style="color:#F90000;">Foto Vehiculos</label>
 	<input type="text" class="form-control" maxlength="45" name="Vehiculos[FotoVehiculos]" value="<?= $Vehiculos->FotoVehiculos ?>"><br><br>
 
 	<input type="hidden" name="id" value="<?= $Vehiculos->IdVehiculos ?>">

@@ -47,56 +47,56 @@
 	<center><form action="" method="post" >
 		
 		
-		<label>Ciudad:</label>
+		<label style="color:#F90000;">Ciudad:</label>
 		
 		<input class="form-control" type="text"   name="Alquileres[Ciudad]"  maxlength="45" value="" required="" /><br><br>		
 		
 
 		
-		<label>ValorDia:</label>
+		<label style="color:#F90000;">ValorDia:</label>
 		
 				<input type="number" name="Alquileres[ValorDia]" value="" required="" class="form-control"
 		/><br><br>
 		
-		<label>FechaRecogida:</label>
+		<label style="color:#F90000;">FechaRecogida:</label>
 		<input type="datetime-local" name="Alquileres[FechaRecogida]"  value="" required="" class="form-control"/><br><br>
 
-		<label>FechaEntrega:</label>
+		<label style="color:#F90000;">FechaEntrega:</label>
 		<input type="datetime-local" name="Alquileres[FechaEntrega]" value="" required="" class="form-control"/><br><br>
 
-		<label>OficinaDeRetiro:</label>
+		<label style="color:#F90000;">OficinaDeRetiro:</label>
 		<input   type="text"   name="Alquileres[OficinaDeRetiro]"  maxlength="45" value="" required="" class="form-control"/><br><br>	
 
-		<label>OficinaDeDevolucion:</label>
+		<label style="color:#F90000;">OficinaDeDevolucion:</label>
 		<input   type="text"   name="Alquileres[OficinaDeDevolucion]"  maxlength="45" value="" required="" class="form-control"/><br><br>			
 
-		<label>Estado:</label>
+		<label style="color:#F90000;">Estado:</label>
 		<select name="Alquileres[Estado]" value="" required="" class="custom-select">
 			<option value="">Seleccione un Estado</option>
 			<option value="Activo">Activo</option>
 			<option value="Inactivo">Inactivo</option>
 		</select><br><br>	
 
-		<label>FormaDePago:</label>
+		<label style="color:#F90000;">FormaDePago:</label>
 		<select name="Alquileres[FormaDePago]" value="" required="" class="custom-select">
 			<option value="">Seleccione una Forma De Pago</option>
 			<option value="TarjetaDeCredito">TarjetaDeCredito</option>
 			<option value="Efectivo">Efectivo</option>
 		</select><br><br>			
 
-		<label>Clientes_IdClientes:</label>
+		<label style="color:#F90000;">Clientes_IdClientes:</label>
 		<select name="Alquileres[Clientes_IdClientes]"  required="" class="custom-select">
 			<option value="">--seleccionar--</option>	
 			<option value="1">1</option>		
 		</select><br><br>	
 
-		<label>Vehiculos_IdVehiculos:</label>
+		<label style="color:#F90000;">Vehiculos_IdVehiculos:</label>
 		<select name="Alquileres[Vehiculos_IdVehiculos]"  required="" class="custom-select">
 			<option value="">--seleccionar--</option>	
 			<option value="1">1</option>		
 		</select><br><br>	
 
-		<label>Usuarios_IdUsuarios:</label>
+		<label style="color:#F90000;">Usuarios_IdUsuarios:</label>
 		<select name="Alquileres[Usuarios_IdUsuarios]"  required="" class="custom-select">
 			<option value="">--seleccionar--</option>	
 			<option value="1">1</option>		

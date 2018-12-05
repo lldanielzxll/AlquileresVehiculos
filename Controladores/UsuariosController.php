@@ -51,10 +51,10 @@ class UsuariosController{
 				$co = $_POST["Usuarios"]["Contrasena"];
 				$fe = $_POST["Usuarios"]["FechaNacimiento"];
 
-				//$Usuarios->findBydocument($Documento);
 
 				$Usuarios = new Usuarios();
-				$guardar = $Usuarios->save($no,$ap,$pe,$do,$co,$fe);
+				$BCRYPT = password_hash($con, PASSWORD_DEFAULT);
+				$guardar = $Usuarios->save($no,$ap,$pe,$do,$co,$fe,$BCRYPT);
 
 				if($guardar){
 					$_SESSION["Documento"]=$do;

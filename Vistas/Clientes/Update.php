@@ -17,25 +17,25 @@
 
 	<center><form action="" method="POST">
 		
-	<label>Nombre</label>
+	<label style="color:#F90000;">Nombre</label>
 	<input type="text" class="form-control"  maxlength="45" name="Clientes[Nombre]" value="<?= $Clientes->Nombre ?>">
 
-	<label>Apellido</label>
+	<label style="color:#F90000;">Apellido</label>
 	<input type="text" class="form-control"  maxlength="45" name="Clientes[Apellido]" value="<?= $Clientes->Apellido ?>">
 
-	<label>Documento</label>
+	<label style="color:#F90000;">Documento</label>
 	<input type="text" class="form-control"  maxlength="10" name="Clientes[Documento]" value="<?= $Clientes->Documento ?>">
 
-	<label>Direccion</label>
+	<label style="color:#F90000;">Direccion</label>
 	<input type="text" class="form-control"  maxlength="45" name="Clientes[Direccion]" value="<?= $Clientes->Direccion ?>">
 
-	<label>Celular</label>
+	<label style="color:#F90000;">Celular</label>
 	<input type="text" class="form-control"  maxlength="10" name="Clientes[Celular]" value="<?= $Clientes->Celular ?>">
 
-	<label>Ciudad</label>
+	<label style="color:#F90000;">Ciudad</label>
 	<input type="text" class="form-control"  maxlength="45" name="Clientes[Ciudad]" value="<?= $Clientes->Ciudad ?>">
 
-	<label>Numero Licencia</label>
+	<label style="color:#F90000;">Numero Licencia</label>
 	<input type="text" class="form-control"  maxlength="45" name="Clientes[NumLicencia]" value="<?= $Clientes->NumLicencia ?>"><br><br>
 		</div>
 	<center><button class="btn btn-info" type="submit"> ACTUALIZAR CLIENTE </button></center>

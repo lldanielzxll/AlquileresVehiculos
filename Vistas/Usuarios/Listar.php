@@ -84,7 +84,7 @@
  	<img src="iconos/crear.png" alt="cre"">
  </a>
 
-		<footer style="width=100%; bottom: 0; position: fixed"><p class="colorp">Tesalqui©2018 - Privacidad y legal - Contacto - Bolsa de Trabajo - Obtén el boletín - Ubicaciones - Siguenos
+		<footer style="width=100%; bottom: 0; position: fixed"><p style="color:white;">Tesalqui©2018 - Privacidad y legal - Contacto - Bolsa de Trabajo - Obtén el boletín - Ubicaciones - Siguenos
 			<a href="" class="btn btn-outline-dark">
 		 	<img src="iconos/face.png" alt="fa">
 		 	</a>

@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/zx.css">
 </head>
-<body  background="iconos/varios.png">
+<body style="background-color:#4F9BFA;">
 	<nav   class="navbar navbar-expand-lg navbar-dark" style="background-color:#000000;">
 			  <div class="collapse navbar-collapse" class="align-self-center mr-3" >
 			    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -46,9 +46,19 @@
 			    </form>
 			  </div>
 			</nav>
+			 <h2 style="text-align: center;">NOS GUSTA SER<br>
+      <br>
+      HONESTOS CONTIGO<br>
+      <br>
+      ¿Por qué en Tesalqui.com somos diferentes?<br>
+      <br>
+      En Tesalqui.com encuentras el precio final a pagar, con impuestos y
+      seguros incluidos y sin cargos ocultos. Además trabajamos constantemente
+      por tener los mejores proveedores de alquiler de carros para que
+      encuentres en 1 solo sitio tu carro ideal.</h2>
 
 
-		<footer style="width=100%; bottom: 0; position: fixed"><p class="colorp">Tesalqui©2018 - Privacidad y legal - Contacto - Bolsa de Trabajo - Obtén el boletín - Ubicaciones - Siguenos
+		<footer style="width=100%; bottom: 0; position: fixed"><p style="color:#000000;" >Tesalqui©2018 - Privacidad y legal - Contacto - Bolsa de Trabajo - Obtén el boletín - Ubicaciones - Siguenos
 			<a href="" class="btn btn-outline-dark">
 		 	<img src="iconos/face.png" alt="fa">
 		 	</a>

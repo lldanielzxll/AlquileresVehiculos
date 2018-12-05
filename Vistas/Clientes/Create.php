@@ -47,25 +47,25 @@
 
 	
 
-	<label>Nombre</label>
+	<label style="color:#F90000;">Nombre</label>
 	<input class="form-control"  maxlength="45" required="" type="text" name="Clientes[Nombre]"values=""/>
 
-	<label>Apellido</label>
+	<label style="color:#F90000;">Apellido</label>
 	<input class="form-control"  maxlength="45" required="" type="text" name="Clientes[Apellido]"values=""/>
 
-	<label>Documento</label>
+	<label style="color:#F90000;">Documento</label>
 	<input class="form-control"  maxlength="10" required="" type="text" name="Clientes[Documento]"values="">
 
-	<label>Direccion</label>
+	<label style="color:#F90000;">Direccion</label>
 	<input class="form-control"  maxlength="45" required="" type="text" name="Clientes[Direccion]"values=""/>
 
-	<label>Celular</label>
+	<label style="color:#F90000;">Celular</label>
 	<input class="form-control"  maxlength="10" required="" type="text" name="Clientes[Celular]"values=""/>
 
-	<label>Ciudad</label>
+	<label style="color:#F90000;">Ciudad</label>
 	<input class="form-control"  maxlength="45" required="" type="text" name="Clientes[Ciudad]"values=""/>
 
-	<label >Numero Licencia</label>
+	<label style="color:#F90000;">Numero Licencia</label>
 	<input class="form-control"  maxlength="45" required="" type="number" name="Clientes[NumLicencia]"values=""/><br><br>
 	</div>
 	<div id="boton" >
