@@ -5,6 +5,8 @@
 	<title>LISTADO GENERAL DE VEHICULOS</title>
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/zx.css">
+	<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body background="iconos/ferrari.png">
 	 
@@ -77,6 +79,28 @@
 
 </table>
 
+<script >
+	swal({
+  title: "Are you sure?",
+  text: "Once deleted, you will not be able to recover this imaginary file!",
+  icon: "warning",
+  imageUrl:"iconos/eliminar.png",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal("Poof! Your imaginary file has been deleted!", {
+      icon: "success",
+    });
+  } else {
+    swal("Your imaginary file is safe!");
+  }
+});
+</script>
+
+
+
 	<a href="index.php?c=Vehiculos&a=create" class="btn btn-outline-dark" role="button" aria-pressed="true">
 		<img src="iconos/crear.png" alt="cre"">
 	</a>
@@ -84,6 +108,8 @@
 <a href="Vistas/Vehiculos/files.php" class="btn btn-outline-dark" role="button" aria-pressed="true">
 		<img src="iconos/imagen.png" alt="cre"">
 	</a>
+
+
 
 	<footer style="width=100%; bottom: 0; position: fixed"><p style="color:white;">Tesalqui©2018 - Privacidad y legal - Contacto - Bolsa de Trabajo - Obtén el boletín - Ubicaciones - Siguenos
 			<a href="" class="btn btn-outline-dark">

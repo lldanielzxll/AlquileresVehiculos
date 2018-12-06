@@ -1,6 +1,7 @@
 <?php
 require_once("Conexion.php");
 
+
 class Vehiculos extends Conexion{
 
 	public $IdVehiculos;

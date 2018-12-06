@@ -1,6 +1,9 @@
 <?php 
 
 require "Modelos/Alquileres.php";
+require "Modelos/Clientes.php";
+require "Modelos/Vehiculos.php";
+require_once "Modelos/Usuarios.php";
 
 class AlquileresController{
 	public static function main($action){
@@ -66,6 +69,15 @@ class AlquileresController{
 				}
 				
 			}else{
+				$cliente = new Clientes();
+				$misClientes = $cliente->listar();
+
+				$Vehiculo = new Vehiculos();
+				$misVehiculos = $Vehiculo->listar();
+
+				$Usuario = new Usuarios();
+				$misUsuarios = $Usuario->listar();
+
 			require "Vistas/Alquileres/Create.php";
 		}
 		}
@@ -94,9 +106,19 @@ class AlquileresController{
 					$Alquileres->Vehiculos_IdVehiculos = $_POST["Alquileres"]["Vehiculos_IdVehiculos"];
 					$Alquileres->Usuarios_IdUsuarios = $_POST["Alquileres"]["Usuarios_IdUsuarios"];
 
-					$Usuarios->update();
+					$Alquileres->update();
 					header("location:index.php?c=Alquileres&a=admin");
 				}else{
+					
+				$cliente = new Clientes();
+				$misClientes = $cliente->listar();
+
+				$Vehiculo = new Vehiculos();
+				$misVehiculos = $Vehiculo->listar();
+
+				$Usuario = new Usuarios();
+				$misUsuarios = $Usuario->listar();
+
 					require "Vistas/Alquileres/Update.php";
 				}
 			}

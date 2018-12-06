@@ -81,7 +81,7 @@
 	</form></center><br>
 
 	
-
+<center><a href="index.php?c=Usuarios&a=admin" class="btn btn-outline-danger">volver</a> </center>
 	
 </body>
 </html>

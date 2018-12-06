@@ -55,8 +55,10 @@
       En Tesalqui.com encuentras el precio final a pagar, con impuestos y
       seguros incluidos y sin cargos ocultos. Además trabajamos constantemente
       por tener los mejores proveedores de alquiler de carros para que
-      encuentres en 1 solo sitio tu carro ideal.</h2>
+      encuentres en 1 solo sitio tu carro ideal.</h2><br>
 
+
+	<center><img src="iconos/123.png" alt="go">	<img src="iconos/cas.png" alt="go"> <img src="iconos/carrs.png" alt="go"></center>
 
 		<footer style="width=100%; bottom: 0; position: fixed"><p style="color:#000000;" >Tesalqui©2018 - Privacidad y legal - Contacto - Bolsa de Trabajo - Obtén el boletín - Ubicaciones - Siguenos
 			<a href="" class="btn btn-outline-dark">

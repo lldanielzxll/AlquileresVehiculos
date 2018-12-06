@@ -38,9 +38,9 @@
 	<label style="color:#F90000;">Numero Licencia</label>
 	<input type="text" class="form-control"  maxlength="45" name="Clientes[NumLicencia]" value="<?= $Clientes->NumLicencia ?>"><br><br>
 		</div>
-	<center><button class="btn btn-info" type="submit"> ACTUALIZAR CLIENTE </button></center>
+	<center><button class="btn btn-info" type="submit"> ACTUALIZAR CLIENTE </button></center><br><br>
 	</form></center>
-	
+		<center><a href="index.php?c=Clientes&a=admin" class="btn btn-outline-danger">volver</a> </center>
 </body>
 </html>
 

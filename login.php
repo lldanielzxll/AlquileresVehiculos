@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +10,10 @@
     <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
+  
         <div class="login">
           <form method="post" class="signin" action="index.php?c=Home&a=login" name="login">
+            <h1>BIENVENIDOS</h1>
                 <fieldset class="textbox">
                 <label class="username">
                 

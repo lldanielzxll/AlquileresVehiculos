@@ -27,10 +27,10 @@
 	<input type="number" class="form-control" name="Vehiculos[CapacidadAsientos]" value="<?= $Vehiculos->CapacidadAsientos ?>">
 
 	<label style="color:#F90000;">FvSeguro</label>
-	<input class="custom-select" type="datetime-local" name="Vehiculos[FvSeguro]" value="<?= $Vehiculos->FvSeguro ?>">
+	<input class="custom-select" type="date"  required="" name="Vehiculos[FvSeguro]" value="<?= $Vehiculos->FvSeguro ?>">
 
 	<label style="color:#F90000;">FvTecnomecanica</label>
-	<input class="custom-select" type="datetime-local" name="Vehiculos[FvTecnomecanica]" value="<?= $Vehiculos->FvTecnomecanica ?>">
+	<input class="custom-select" type="date"  required="" name="Vehiculos[FvTecnomecanica]" value="<?= $Vehiculos->FvTecnomecanica ?>">
 
 	<label style="color:#F90000;">Foto Vehiculos</label>
 	<input type="text" class="form-control" maxlength="45" name="Vehiculos[FotoVehiculos]" value="<?= $Vehiculos->FotoVehiculos ?>"><br><br>
@@ -38,10 +38,10 @@
 	<input type="hidden" name="id" value="<?= $Vehiculos->IdVehiculos ?>">
 	</div>
 	<center>
-	<button class="btn btn-info" type="submit"> ACTUALIZAR VEHICULO </button>
+	<button class="btn btn-info" type="submit"> ACTUALIZAR VEHICULO </button><br><br>
 	</center>
 	</form></center>
-	
+		<center><a href="index.php?c=Vehiculos&a=admin" class="btn btn-outline-danger">volver</a> </center>
 </body>
 </html>
 

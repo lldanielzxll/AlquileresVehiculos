@@ -2,6 +2,8 @@
 
 require_once("Conexion.php");
 
+
+
 class Alquileres extends Conexion{
 
 	public $IdAlquileres;
@@ -77,7 +79,9 @@ class Alquileres extends Conexion{
             //Modificar
              public function update(){ 
 			$Conexion =$this->getConexion();
-			$stm = $Conexion->prepare("UPDATE Alquileres set  Ciudad=:CIU, ValorDia=:VAL, FechaRecogida=:FECR, FechaEntrega=:FECE , OficinaDeRetiro=:OFIR , OficinaDeDevolucion=:OFID , Estado=:EST , FormaDePago=:FOR ,:Clientes_IdClientes=CLC ,:Vehiculos_IdVehiculos=VEV ,:Usuarios_IdUsuarios=USU WHERE IdAlquileres = :Id");
+
+			$stm = $Conexion->prepare("UPDATE Alquileres SET  Ciudad=:CIU, ValorDia=:VAL, FechaRecogida=:FECR, FechaEntrega=:FECE , OficinaDeRetiro=:OFIR , OficinaDeDevolucion=:OFID , Estado=:EST , FormaDePago=:FOR ,:Clientes_IdClientes=CLC ,:Vehiculos_IdVehiculos=VEV ,:Usuarios_IdUsuarios=USU WHERE IdAlquileres = :Id");
+			
 			$stm->bindParam(":CIU", $this->Ciudad);
 			$stm->bindParam(":VAL", $this->ValorDia);
 			$stm->bindParam(":FECR", $this->FechaRecogida);
@@ -86,9 +90,9 @@ class Alquileres extends Conexion{
 			$stm->bindParam(":OFID", $this->OficinaDeDevolucion);
 			$stm->bindParam(":EST", $this->Estado);
 			$stm->bindParam(":FOR", $this->FormaDePago);
-			$stm->bindParam(":FOR", $this->Clientes_IdClientes);
-			$stm->bindParam(":FOR", $this->Vehiculos_IdVehiculos);
-			$stm->bindParam(":FOR", $this->Usuarios_IdUsuarios);
+			$stm->bindParam(":CLC", $this->Clientes_IdClientes);
+			$stm->bindParam(":VEV", $this->Vehiculos_IdVehiculos);
+			$stm->bindParam(":USU", $this->Usuarios_IdUsuarios);
 			$stm->bindParam(":Id", $this->IdAlquileres);
                         
             $stm->execute();

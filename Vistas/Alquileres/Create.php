@@ -86,20 +86,27 @@
 
 		<label style="color:#F90000;">Clientes_IdClientes:</label>
 		<select name="Alquileres[Clientes_IdClientes]"  required="" class="custom-select">
-			<option value="">--seleccionar--</option>	
-			<option value="1">1</option>		
+			<option value="">--seleccionar--</option>
+			<?php foreach ($misClientes as $cliente ) { ?>
+				<option value="<?php echo $cliente->IdClientes ?>"><?php echo $cliente->Nombre ?></option>
+			<?php }	?>
+			
 		</select><br><br>	
 
 		<label style="color:#F90000;">Vehiculos_IdVehiculos:</label>
 		<select name="Alquileres[Vehiculos_IdVehiculos]"  required="" class="custom-select">
 			<option value="">--seleccionar--</option>	
-			<option value="1">1</option>		
+			<?php foreach ($misVehiculos as $Vehiculo ) { ?>
+				<option value="<?php echo $Vehiculo->IdVehiculos ?>"><?php echo $Vehiculo->Placa ?></option>
+			<?php }	?>		
 		</select><br><br>	
 
 		<label style="color:#F90000;">Usuarios_IdUsuarios:</label>
 		<select name="Alquileres[Usuarios_IdUsuarios]"  required="" class="custom-select">
 			<option value="">--seleccionar--</option>	
-			<option value="1">1</option>		
+			<?php foreach ($misUsuarios as $Usuario ) { ?>
+				<option value="<?php echo $Usuario->IdUsuarios ?>"><?php echo $Usuario->Documento ?></option>
+			<?php }	?>			
 		</select><br><br>
 
 		</div>
@@ -108,6 +115,6 @@
 		</div>
 	</form></center><br>
 
-	
+	<center><a href="index.php?c=Alquileres&a=admin" class="btn btn-outline-danger">volver</a> </center>
 </body>
 </html>

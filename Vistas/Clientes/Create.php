@@ -69,10 +69,10 @@
 	<input class="form-control"  maxlength="45" required="" type="number" name="Clientes[NumLicencia]"values=""/><br><br>
 	</div>
 	<div id="boton" >
-	<button type="submit" class="btn btn-info"> CREAR CLIENTE </button>
+	<button type="submit" class="btn btn-info"> CREAR CLIENTE </button><br><br>
 	</div>
 </form></center>
 
-
+<center><a href="index.php?c=Clientes&a=admin" class="btn btn-outline-danger">volver</a> </center>
 </body>
 </html>

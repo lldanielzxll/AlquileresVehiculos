@@ -22,7 +22,7 @@
 		<input type="text" name="Usuarios[Apellidos]"  class="form-control" value="<?= $Usuarios->Apellidos ?>" maxlength="45"  required=""><br>
 
 		<label >Perfil:</label>
-		<select name="Usuarios[Perfil]" value="" required="" class="custom-select">
+		<select name="Usuarios[Perfil]"  required="" class="custom-select">
 			<option value="">Selecciona un Servicio</option>
 			<option value="<?= $Usuarios->Perfil ?>">Usuario </option>
             <option value="<?= $Usuarios->Perfil ?>">Administrador </option>
@@ -40,8 +40,8 @@
 		<input type="hidden" name="id" value="<?= $Usuarios->IdUsuarios ?>">
 		</div>
 
-		<center><button class="btn btn-info" type="submit">guardar vehiculos</button></center>
+		<center><button class="btn btn-info" type="submit">Guardar Vehiculos</button></center><br><br>
 	</form>
-
+	<center><a href="index.php?c=Usuarios&a=admin" class="btn btn-outline-danger">volver</a> </center>
 </body>
 </html>

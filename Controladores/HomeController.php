@@ -42,14 +42,14 @@ require_once("Modelos/Usuarios.php");
 						header("location:index.php?c=Home");
 					}else header("location:index.php?c=Home&a=Home");
 				}else{
-					header("location:index.php?$c=Home&a=Home&error=true");
+					header("location:index.php?$c=Home&a=login&error=true");
 				}
 			}
-			require "Vistas/Home/header.php";
+			require "login.php";
 		}
 		private function logout(){
 			session_destroy();
-			header("location:index.php?$c=Home&a=Home");
+			header("location:login.php");
 		}
 	}
 

@@ -57,18 +57,18 @@
 	<input  class="form-control" required="" type="number" name="Vehiculos[CapacidadAsientos]"values="">
 
 	<label style="color:#F90000;">FvSeguro</label>
-	<input class="custom-select" required="" type="datetime-local" name="Vehiculos[FvSeguro]"values=""/>
+	<input class="custom-select" required="" type="date" name="Vehiculos[FvSeguro]"values=""/>
 
 	<label style="color:#F90000;">FvTecnomecanica</label>
-	<input class="custom-select" required="" type="datetime-local" name="Vehiculos[FvTecnomecanica]"values=""/>
+	<input class="custom-select" required="" type="date" name="Vehiculos[FvTecnomecanica]"values=""/>
 
 	<label style="color:#F90000;">Foto Vehiculos</label>
 	<input class="form-control" required=""  maxlength="45" type="text" name="Vehiculos[FotoVehiculos]"values=""/><br><br>
 	</div>
 	<div id="boton" >
-	<button class="btn btn-info" type="submit"> CREAR VEHICULO </button>
+	<button class="btn btn-info" type="submit"> CREAR VEHICULO </button><br><br>
 	</div>
 </form></center>
-
+	<center><a href="index.php?c=Vehiculos&a=admin" class="btn btn-outline-danger">volver</a> </center>
 </body>
 </html>

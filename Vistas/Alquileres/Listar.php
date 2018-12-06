@@ -74,7 +74,7 @@
 				<td><?= $Alquileres->OficinaDeDevolucion; ?></td>
 				<td><?= $Alquileres->Estado; ?></td>
 				<td><?= $Alquileres->FormaDePago; ?></td>
-				<td><?= $Alquileres->Clientes_IdClientes; ?></td>
+				<td><?= $Alquileres->Clientes_IdClientes; ?> </td>
 				<td><?= $Alquileres->Vehiculos_IdVehiculos; ?></td>
 				<td><?= $Alquileres->Usuarios_IdUsuarios; ?></td>
 				<td> 

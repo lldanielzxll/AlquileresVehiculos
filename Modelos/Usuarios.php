@@ -23,13 +23,13 @@ class Usuarios extends Conexion{
 		$Conexion = $this->getConexion();
 		$stm = $Conexion->prepare("SELECT * FROM Usuarios");
 		$stm->setFetchMode(PDO::FETCH_CLASS,'Usuarios');
-		$usuario = array();
+		$Usuarios = array();
 		$stm->execute();
 
 		while ($obj = $stm->fetch()) {
-				$usuario[]=$obj;
+				$Usuarios[]=$obj;
 			}			
-			return $usuario;
+			return $Usuarios;
 	}
 
 	//crear
@@ -106,7 +106,7 @@ class Usuarios extends Conexion{
 			} 
 			return $Usuarios; 
                 
-}
+		}
 }
 
 
