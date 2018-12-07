@@ -6,6 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/zx.css">
 	<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script type="text/javascript" src="https://unpkg.com/rmodal/dist/rmodal.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body background="iconos/ferrari.png">
@@ -67,10 +73,10 @@
 			<th ><?= $veh->FvTecnomecanica; ?></th>
 			<th ><?= $veh->FotoVehiculos; ?></th>
 			<td ><a href="index.php?c=Vehiculos&a=update&id=<?= $veh->IdVehiculos; ?>">
-						<img src="iconos/editar.png" alt="edi"">
+						<img  src="iconos/editar.png" alt="edi">
 					</a>
 			<a href="index.php?c=Vehiculos&a=delete&id=<?= $veh->IdVehiculos; ?>">
-					<img src="iconos/eliminar.png" alt="eli"">
+					<img onclick="eliminar(<?= $Vehiculos->IdVehiculos; ?>)" src="iconos/eliminar.png" alt="eli">
 					</a>
 			</td>
 		</tr>
@@ -79,25 +85,42 @@
 
 </table>
 
-<script >
-	swal({
-  title: "Are you sure?",
-  text: "Once deleted, you will not be able to recover this imaginary file!",
-  icon: "warning",
-  imageUrl:"iconos/eliminar.png",
-  buttons: true,
-  dangerMode: true,
-})
-.then((willDelete) => {
-  if (willDelete) {
-    swal("Poof! Your imaginary file has been deleted!", {
-      icon: "success",
-    });
-  } else {
-    swal("Your imaginary file is safe!");
-  }
-});
-</script>
+
+        <script type="text/javascript" >
+            function eliminar(id){
+                swal({
+                    title: "Esta seguro?",
+                    text: "Este fecha se eliminara!",
+                    icon: "error",
+                    buttons: true,
+                    dangerMode: true
+                  }).then((willDelete) => {
+                    if (willDelete) {
+                        swal("Muy bien!", "Se ha eliminado","success");
+                        setTimeout(function(){
+                        location.href="index.php?c=Vehiculos&a=delete&id"+id;
+                    }, 1000);
+                    }
+                  });
+            }
+             function editar(id,nombres){
+                swal({
+                    title: "Quieres editar esta fecha",
+                    text: "",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true
+                  }).then((willDelete) => {
+                    if (willDelete) {
+                       
+                      
+                        location.href="index.php?c=Vehiculos&a=update&id="+id;
+             
+                    }
+                  });
+            }
+  </script> 
+
 
 
 

@@ -2,7 +2,9 @@
 
 require_once("Conexion.php");
 
-
+require_once "Modelos/Clientes.php";
+require_once "Modelos/Vehiculos.php";
+require_once "Modelos/Usuarios.php";
 
 class Alquileres extends Conexion{
 
@@ -33,6 +35,19 @@ class Alquileres extends Conexion{
 		$stm->execute();
 
 		while ($obj = $stm->fetch()) {
+
+			$cli = new Clientes();
+			@$cli->findByPk($obj->IdVehiculos);
+			@$obj->IdClientes = $cli;
+
+			$veh = new Vehiculos();
+			@$veh->findByPk($obj->IdVehiculos);
+			@$obj->IdVehiculos = $veh;
+
+			$usu = new Usuarios();
+			@$usu->findByPk($obj->IdUsuarios);
+			@$obj->IdUsuarios = $usu;
+
 				$Alquileres[]=$obj;
 			}			
 			return $Alquileres;
@@ -80,7 +95,7 @@ class Alquileres extends Conexion{
              public function update(){ 
 			$Conexion =$this->getConexion();
 
-			$stm = $Conexion->prepare("UPDATE Alquileres SET  Ciudad=:CIU, ValorDia=:VAL, FechaRecogida=:FECR, FechaEntrega=:FECE , OficinaDeRetiro=:OFIR , OficinaDeDevolucion=:OFID , Estado=:EST , FormaDePago=:FOR ,:Clientes_IdClientes=CLC ,:Vehiculos_IdVehiculos=VEV ,:Usuarios_IdUsuarios=USU WHERE IdAlquileres = :Id");
+			$stm = $Conexion->prepare("UPDATE Alquileres SET  Ciudad=:CIU, ValorDia=:VAL, FechaRecogida=:FECR, FechaEntrega=:FECE , OficinaDeRetiro=:OFIR, OficinaDeDevolucion=:OFID, Estado=:EST, FormaDePago=:FOR, Clientes_IdClientes=:CLC ,Vehiculos_IdVehiculos=:VEV ,Usuarios_IdUsuarios=:USU WHERE IdAlquileres = :Id");
 			
 			$stm->bindParam(":CIU", $this->Ciudad);
 			$stm->bindParam(":VAL", $this->ValorDia);
@@ -94,6 +109,8 @@ class Alquileres extends Conexion{
 			$stm->bindParam(":VEV", $this->Vehiculos_IdVehiculos);
 			$stm->bindParam(":USU", $this->Usuarios_IdUsuarios);
 			$stm->bindParam(":Id", $this->IdAlquileres);
+
+			
                         
             $stm->execute();
 			}

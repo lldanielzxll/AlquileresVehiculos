@@ -1,8 +1,8 @@
 <?php 
 
-require "Modelos/Alquileres.php";
-require "Modelos/Clientes.php";
-require "Modelos/Vehiculos.php";
+require_once "Modelos/Alquileres.php";
+require_once "Modelos/Clientes.php";
+require_once "Modelos/Vehiculos.php";
 require_once "Modelos/Usuarios.php";
 
 class AlquileresController{
